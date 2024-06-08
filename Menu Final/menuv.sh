@@ -1,25 +1,7 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-CEKEXPIRED () {
-    today=$(date -d +1day +%Y-%m-%d)
-    Exp1=$(curl -sS https://raw.githubusercontent.com/Andyvpn/Autoscript-vpn/main/permission/ip | grep $MYIP | awk '{print $3}')
-    if [[ $today < $Exp1 ]]; then
-    echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
-    else
-    echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
-    exit 0
-fi
-}
-IZIN=$(curl -sS https://raw.githubusercontent.com/Andyvpn/Autoscript-vpn/main/permission/ip | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo -e "\e[32mPermission Accepted...\e[0m"
-CEKEXPIRED
-else
-echo -e "\e[31mPermission Denied!\e[0m";
-exit 0
-fi
-clear
+
 BIBlack='\033[1;90m'      # Black
 BIRed='\033[1;91m'        # Red
 BIGreen='\033[1;92m'      # Green
@@ -74,7 +56,7 @@ echo -e " ${PURPLE}│$NC                                              ${NC} ${P
 echo -e " ${PURPLE}│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              ${PURPLE}│$NC"
 echo -e " ${PURPLE}└───────────────────────────────────────────────┘${NC}"
 echo -e "${PURPLE}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${PURPLE}│${NC}                 •  Andyyuda  •                  ${PURPLE}│$NC"
+echo -e "${PURPLE}│${NC}                 •  AtaLioMego  •                  ${PURPLE}│$NC"
 echo -e "${PURPLE}└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -p " Select menu :  "  opt
