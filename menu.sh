@@ -66,8 +66,8 @@ export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther=".geovpn"
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/permission/main/ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/permission/main/ip | grep $MYIP | awk '{print $3}')
+Name=$(curl -sS https://raw.githubusercontent.com/yardproject/hele/main/ip | grep $MYIP | awk '{print $2}')
+Exp=$(curl -sS https://raw.githubusercontent.com/yardproject/hele/main/ip | grep $MYIP | awk '{print $3}')
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -169,7 +169,7 @@ ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[39;1;92m                   ⇱ SCRIPT PREMIUM BY ANDY YUDA⇲             \E[0m"
+echo -e "\E[39;1;92m                   ⇱ 88NUMB || AtaLioMego ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${BICyan} "                                                                      
 echo -e "${BICyan} ⇲  ${BICyan}Use Core        :  ${BIYellow}Xray-core"    
@@ -180,7 +180,7 @@ echo -e "${BICyan} ⇲  ${BICyan}ISP-VPS         :  ${BIYellow}$ISPVPS${NC}"
 echo -e "${BICyan} ⇲  ${BICyan}TOTAL RAM       :  ${BIYellow}${totalram}MB"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[39;1;92m STATUS HARI INI  :  ⇱ Tetap Tersenyum ⇲             \E[0m"
+echo -e "\E[39;1;92m STATUS HARI INI  :  ⇱ Po'u Nia Dulu Broooo!! ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${BICyan} "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -227,8 +227,8 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│ ${BOLD}${BLUE}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${BLUE}Expired   = $Exp                            ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Developer = Andy Yuda                       ${NC}"
-echo -e "${BICyan}│ ${BOLD}${RED}Version   = SUPER LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${BLUE}Developer = Youell || AtaLioMego™           ${NC}"
+echo -e "${BICyan}│ ${BOLD}${RED}Version    = Always On                       ${NC}"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
