@@ -116,6 +116,6 @@ echo -e "Payload Websocket HTTP"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${CYAN}     Terimakasih sudah menggunakan" 
-echo -e "${CYAN}        script premium Andyyuda"
+echo -e "${CYAN}     Premium Script || Cincop by AtaLioMego
+echo -e "${CYAN}        Find us on FACEBOOK Page: 88Numb
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
