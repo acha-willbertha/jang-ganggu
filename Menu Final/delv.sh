@@ -20,7 +20,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  • You Dont have any existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 •  The Moon  •                  $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 •  AtaLioMego  •                  $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
