@@ -64,8 +64,6 @@ persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
 persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS https://raw.githubusercontent.com/andristji/Xray-SSH/main/permission/ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/andristji/Xray-SSH/main/permission/ip | grep $MYIP | awk '{print $3}')
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
@@ -97,7 +95,6 @@ echo -e "• ISP                 = $(cat /root/.isp)${NC}"
 echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
 echo -e "• Clients Name        = $Name"
 echo -e "• Expired Script VPS  = $Exp"
-echo -e "• Status Hari ini     = jangan lupa bahagia"
 echo -e ""
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${GREEN}ON ${NC}]  [ NGINX${NC}: ${status_nginx} ] ${COLOR2}[ Today  : $ttoday ]"
@@ -107,7 +104,7 @@ echo -e "$COLOR1│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJ
 echo -e "$COLOR1│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC    $COLOR1│"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e "      $COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "      $COLOR1│${NC}                 •  Andyyuda  •                  $COLOR1│$NC"
+echo -e "      $COLOR1│${NC}                 • AtaLioMego •                  $COLOR1│$NC"
 echo -e "      $COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -e " ${CYAN}[01]${NC} • [SSH MENU${NC}]${CYAN}[08]${NC} • [INSTALL ADS-BLOCK${NC}]${CYAN}[15]${NC} • [RUNNING${NC}]"
