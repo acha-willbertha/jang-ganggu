@@ -1,6 +1,6 @@
 #!/bin/bash
-# // script credit by CyberVPN
-# // ini adalah script autoinstall ssh multiport untuk instalasi vpn server dan tunneling service
+# // script by AtaLioMego™
+
 MYIP=$(curl -sS ipv4.icanhazip.com)
 red='\e[1;31m'
 green='\e[0;32m'
@@ -61,10 +61,13 @@ fi
 }
 IZIN=$(curl -sS https://raw.githubusercontent.com/yardproject/hele/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
+echo "Keygen Terdeteksi: 1171114160-88numb-Ataliomego"
+echo "Terimakasih Telah memilih layanan Server Tunnel VPN kami! "
+
 CEKEXPIRED
 else
 echo "Akses di tolak!! Po'u Nia Dulu Broooo!!";
+echo "Hubungi: wa.me/6281333398151";
 exit 0
 fi
 
@@ -108,10 +111,10 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -qO- https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 sleep 2
 clear
-wget https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+wget -q https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 
 
 #install ssh ovpn
@@ -120,7 +123,7 @@ echo -e "$green      Install Websocket              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/Insshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget -q https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/Insshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 #exp
 cd /usr/bin
@@ -131,7 +134,7 @@ wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/acha-willbertha
 
 cd
 #remove log 
-#wget -q -O /usr/bin/removelog "https://github.com/andristji/Xray-SSH/raw/main/log.sh" && chmod +x /usr/bin/removelog
+wget -q -O /usr/bin/removelog "https://github.com/andristji/Xray-SSH/raw/main/log.sh" && chmod +x /usr/bin/removelog
 #sleep 1
 rm -f /root/ins-xray.sh
 rm -f /root/insshws.sh
@@ -165,38 +168,8 @@ mkdir /root/akun/vless
 mkdir /root/akun/shadowsocks
 mkdir /root/akun/trojan
 
-# Nama file swap
-SWAP_FILE=/swapfile
-Ukuran swap dalam gigabyte
-SWAP_SIZE_GB=1
-Periksa apakah script dijalankan sebagai root
-if [ "$(id -u)" -ne 0 ]; then
-   echo "Script ini harus dijalankan sebagai root" 
-      exit 1
-      fi
-
-   Buat file swap dengan ukuran yang diinginkan
-      fallocate -l ${SWAP_SIZE_GB}G $SWAP_FILE
-
-   Atur permission agar file swap hanya dapat diakses oleh root
-      chmod 600 $SWAP_FILE
-
-   Konfigurasi file sebagai swap
-      mkswap $SWAP_FILE
-
-   Aktifkan swap
-      swapon $SWAP_FILE
-
-   Tambahkan ke /etc/fstab agar swap otomatis diaktifkan saat boot
-      echo "$SWAP_FILE none swap sw 0 0" | tee -a /etc/fstab
-
-   Tampilkan informasi swap untuk memverifikasi
-      swapon --show
-
-   Tampilkan informasi memori untuk memastikan swap telah ditambahkan
-      free -h
-
-   echo "Swap memory sebesar ${SWAP_SIZE_GB}GB telah ditambahkan dan diaktifkan."
+# Instal Swap File 1G 
+wget -q -O https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/nasofaring.sh && chmod +x nasofaring.sh && ./nasofaring.sh
 
 #install remove log
 echo "0 5 * * * root reboot" >> /etc/crontab
