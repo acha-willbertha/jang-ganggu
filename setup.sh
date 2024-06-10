@@ -127,7 +127,7 @@ wget -q https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/Insshws
 
 #exp
 cd /usr/bin
-wget -O xp "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/xp.sh"
+wget -O xp "https://raw.githubusercontent.com/Aacha-willbertha/jang-ganggu/main/xp.sh"
 chmod +x xp
 sleep 1
 wget -q -O /usr/bin/notramcpu "https://raw.githubusercontent.com/acha-willbertha/jang-ganggu/main/Finaleuy/notramcpu" && chmod +x /usr/bin/notramcpu
